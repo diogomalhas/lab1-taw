@@ -5,92 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 1 - Group 2</title>
-    <style>
-        header {
-            display: flex;
-        }
-
-        #logo {
-            flex: 1;
-        }
-
-        nav {
-            flex: 3;
-        }
-
-        ul {
-            display: flex;
-        }
-
-        .content {
-            display: flex;
-        }
-
-        .left {
-            flex: 2;
-            border: 1px solid black;
-        }
-
-        .right {
-            flex: 1;
-            border: 1px solid black;
-        }
-
-        .to-be-block{
-            display: block;
-        }
-
-        #group-photo{
-            max-width:100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header style="border:1px solid black;">
-        <div id="logo">
-            <img src="images/logo.png" alt="Logotipo do projeto 1" width="100" height="100">
-        </div>
-        <nav style="border:1px solid black;">
-            <ul>
-                <li><a href="#">Who we are</a></li> |
-                <li><a href="#">What we do</a></li> |
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="images/logo.png" alt="Logotipo do projeto 1" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><span>Who we are</span></li> &nbsp;|&nbsp;
+                    <li><span>What we do</span></li> &nbsp;|&nbsp;
+                    <li><span>Contacts</span></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="content">
-        <div class="left">
-            <h1>Group 21</h1>
-            <h2>COME AND WORK WITH US</h2>
-            <p>André, Youssef and Diogo</p>
-            <img src="images/guell.avif" alt="Parc Guell" id="group-photo">
-        </div>
-        <div class="right">
-            <h2>ASK INFO</h2>
+        <div class="content">
+            <div class="left">
+                <h1>Group 21</h1>
+                <h2>COME AND WORK WITH US</h2>
+                <p>André, Youssef and Diogo</p>
+                <img src="images/guell.avif" alt="Parc Guell" id="group-photo">
+            </div>
+            <div class="right">
+                <h2>ASK INFO</h2>
 
-            <form action="#">
+                <form action="#">
 
-                <label for="email" class="to-be-block">Email</label>
-                <input type="text" name="email" id="email">
-                <br>
-                <label for="question" class="to-be-block">Question</label>
-                <textarea id="question" name="question" rows="5">
-                </textarea>
-                <br>
-                <label for="checkbox">Price request</label>
-                <input type="checkbox" id="checkbox" name="checkbox">
-                <br>
-                <input type="submit" value="Ask">
-            </form>
+                    <label for="email" class="to-be-block">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <label for="question" class="to-be-block">Question:</label>
+                    <textarea id="question" name="question" rows="5">
+                    </textarea>
+                    <br>
+                    <label for="checkbox">Price request</label>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <br>
+                    <input type="submit" value="Ask" id="submit">
+                </form>
+            </div>
         </div>
+
+        <footer>
+            <p>© Group 21 2025</p>
+            <p>Made by André (20241785), Diogo (r2011255) and Youssef (20221801)</p>
+        </footer>
     </div>
 
-    <footer style="border:1px solid black;">
-        <p>© Group 21 2025</p>
-        <p>Made by André (20241785), Diogo (r2011255) and Youssef (20221801)</p>
-    </footer>
 
 
 
