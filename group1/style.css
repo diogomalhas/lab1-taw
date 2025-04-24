@@ -1,7 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2 {
+    color: #5B9BD5;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .container {
@@ -22,17 +29,21 @@ nav {
     flex: 3;
 }
 
-ul {
+.menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #5B9BD5;
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
-    padding:0; 
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    cursor:pointer;
 }
 
-li {
+.menu-entry {
     display: inline-block;
 
 }
@@ -58,27 +69,16 @@ li {
     max-width: 100%;
 }
 
-h1,
-h2 {
-    color: #5B9BD5;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
 .left p {
     margin-top: 0;
 }
 
-footer {
-    margin: 20px 0px;
-}
-
-footer p {
-    margin: 0;
-}
-
 label {
     margin-top: 10px;
+}
+
+#email, #question{
+    width:85%;
 }
 
 #submit {
@@ -89,12 +89,24 @@ label {
     text-transform: uppercase;
     padding: 5px 35px;
     margin-top: 20px;
+    cursor:pointer;
 }
 
-.copyright{
+footer {
+    margin: 20px 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.copyright {
     font-size: 16px;
 }
 
-.madeby{
-    font-size:14px;
+.madeby {
+    font-size: 14px;
 }
+
+
+
