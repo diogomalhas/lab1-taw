@@ -19,6 +19,7 @@ body {
 
 header {
     display: flex;
+    margin-top:10px;
 }
 
 #logo {
