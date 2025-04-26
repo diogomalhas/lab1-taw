@@ -4,11 +4,12 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1,
-h2 {
+.main-title, .subtitle{
     color: #5B9BD5;
     text-transform: uppercase;
     margin-bottom: 5px;
+    font-weight:bold;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -45,7 +46,14 @@ nav {
 
 .menu-entry {
     display: inline-block;
+}
 
+.divider{
+    font-size:20px;
+}
+
+.divider{
+    font-size:16px;
 }
 
 .content {
@@ -108,30 +116,29 @@ footer p {
     font-size: 14px;
 }
 
+/* Responsive layout */
 
-
-
-
-/* Responsive Design */
-
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 600px) {
 
     header, .content {
         flex-direction: column;
     }
 
-    #logo{
+    #logo-wrapper{
         text-align: center;
+        margin:15px 0;
     }
 
     .menu-entry {
         font-size: 14px;
     }
 
-    h1, h2{
+    .main-title, .subtitle{
         text-align:center
+    }
+
+    .divider{
+        font-size:16px;
     }
 
     .left p{

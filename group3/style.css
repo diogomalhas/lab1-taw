@@ -10,7 +10,7 @@ body {
 }
 
 
-#logo {
+#logo-wrapper {
     margin: 10px 0;
 }
 
@@ -30,9 +30,11 @@ body {
 
 .menu-entry {
     display: inline-block;
-
 }
 
+.divider{
+    font-size:20px;
+}
 
 .to-be-block {
     display: block;
@@ -113,7 +115,7 @@ label {
 @media (max-width: 600px) {
 
 
-    #logo {
+    #logo-wrapper {
         text-align: center;
     }
 
@@ -121,9 +123,12 @@ label {
         font-size: 14px;
     }
 
-    h1,
-    h2 {
-        text-align: center
+    .divider{
+        font-size:16px;
+    }
+
+    .main-title, .subtitle{
+        text-align: center;
     }
 
     .left p {
